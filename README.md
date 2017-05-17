@@ -40,6 +40,6 @@ This repo includes the Pown official distribution plus some modules **under deve
 # Install Pown.js globally:
 npm install -g pown-next
 
-# Run a module.
+# Run a module:
 pown-next geo
 ```
