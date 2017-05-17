@@ -1,0 +1,53 @@
+{
+  "name": "pown-next",
+  "version": "0.1.0-beta.0",
+  "description": "Pownage guaranteed",
+  "main": "index.js",
+  "bin": {
+    "pown-next": "./index.js"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "dep-sec": "nsp check",
+    "test": "npm run lint && npm run dep-sec",
+    "release": "npm test && release-it",
+    "release-minor": "npm test && release-it minor",
+    "release-major": "npm test && release-it major"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pown-nextjs/pown-next.git"
+  },
+  "keywords": [
+    "exploit",
+    "framework",
+    "pentest"
+  ],
+  "author": "Jesús Pérez <jesusprubio@fsf.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pown-nextjs/pown-next/issues"
+  },
+  "homepage": "https://github.com/pown-nextjs/pown-next#readme",
+  "dependencies": {
+    "pown-cli": "^0.3.0",
+    "pown-dist": "^0.8.0",
+    "pown-dns": "github:jesusprubio/pown-dns#0.1.0-beta.0",
+    "pown-exploitsearch": "github:jesusprubio/pown-exploitsearch#0.1.0-beta.1",
+    "pown-geo": "github:jesusprubio/pown-geo#0.1.0-beta.1",
+    "pown-ip": "github:jesusprubio/pown-ip#0.1.0-beta.1",
+    "pown-shodan": "github:jesusprubio/pown-shodan#0.1.0-beta.0",
+    "pown-voip-creds": "^0.1.5",
+    "pown-wifi-aps": "^0.1.3"
+  },
+  "devDependencies": {
+    "depcheck": "^0.6.4",
+    "eslint": "^3.6.0",
+    "eslint-config-airbnb-base": "^8.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-json": "^1.2.0",
+    "npm-check-updates": "^2.8.0",
+    "nsp": "^2.1.0",
+    "release-it": "^2.5.3"
+  }
+}
