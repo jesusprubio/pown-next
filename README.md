@@ -1,3 +1,5 @@
+# pown.js
+
 ```
 +---------------------------------------------+
 |                                             |
@@ -30,3 +32,14 @@
 This repo includes the Pown official distribution plus some modules **under development** which are still not present on it.
 
 :fire: You should consider this project **experimental**, so use the official one in production environments: https://github.com/pownjs/pown.
+
+
+## Quickstart
+
+```sh
+# Install Pown.js globally:
+npm install -g pown-next
+
+# Run a module.
+pown-next geo
+```
